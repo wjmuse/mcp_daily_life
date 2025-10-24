@@ -1,0 +1,10 @@
+# MCP Server Dependencies
+mcp>=1.0.0
+
+# Python Standard Library (no installation needed)
+# - asyncio
+# - json
+# - logging
+# - pathlib
+# - datetime
+# - typing
