@@ -43,10 +43,13 @@ pip install -e .
 │   ├── 01-coding.md          # Core coding standards
 │   ├── 02-documentation.md   # Documentation requirements
 │   └── current-sprint.md     # Current sprint rules
-├── memory-bank/              # Cline Memory Bank
-│   ├── common-knowledge/     # Document format knowledge
-│   ├── code-snippets/        # Reusable code patterns
-│   └── configuration/        # Configuration settings
+├── memory-bank/              # Cline Memory Bank (6 core files)
+│   ├── projectbrief.md       # Project overview and requirements
+│   ├── productContext.md     # Why this exists and how it works
+│   ├── activeContext.md      # Current work and recent changes
+│   ├── systemPatterns.md     # Architecture and design patterns
+│   ├── techContext.md        # Technologies and development setup
+│   └── progress.md           # What works and what's left
 ├── src/
 │   └── document_assistant/   # Main package
 │       ├── server.py         # MCP server implementation
@@ -197,11 +200,16 @@ To use this server with Cline or other MCP clients, add it to your MCP settings:
 
 ## Memory Bank
 
-The `memory-bank/` directory contains custom instructions for Cline:
+The `memory-bank/` directory follows Cline's Memory Bank structure with 6 core files that provide complete project context:
 
-- **common-knowledge/**: Document format knowledge and best practices
-- **code-snippets/**: Reusable MCP patterns and code examples
-- **configuration/**: Server settings and preferences
+- **projectbrief.md**: Project overview, requirements, scope, and success criteria
+- **productContext.md**: Why this project exists, problems it solves, and user experience goals
+- **activeContext.md**: Current work focus, recent changes, active decisions, and important patterns
+- **systemPatterns.md**: System architecture, design patterns, and technical decisions
+- **techContext.md**: Technologies used, development setup, and technical constraints
+- **progress.md**: What's working, what's left to build, known issues, and project evolution
+
+These files are essential for Cline to understand the project context after memory resets and ensure consistent development across sessions.
 
 ## Contributing
 
